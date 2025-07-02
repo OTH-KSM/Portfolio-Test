@@ -17,6 +17,7 @@ export const Home = () =>
         <main>
             <HeroSection />
             <AboutSection />
+            <SkillsSection />
         </main>
         {/* { Footer } */}
     </div>;

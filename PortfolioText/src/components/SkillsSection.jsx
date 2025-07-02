@@ -32,7 +32,7 @@ export const SkillsSection = () => {
     // }
 
     return (
-        <section id="skills" className="border-2 border-amber-100 py-24 px-4 relative bg-secondary/30">
+        <section id="skills" className="py-24 px-4 relative bg-secondary/30">
 
             <div className="container m-auto max-w-5xl">
                 <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
@@ -58,19 +58,21 @@ export const SkillsSection = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-3 gap-8 max-w-4xl m-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-4xl m-auto">
                 {skills
                     .filter(skill => skill.category == isSelected)
                     .map((skill) =>  (
                     
-                    <div key={skill.name} className="p-15 rounded-2xl bg-foreground/6 flex flex-col justify-center items-center gap-8">
+                    <div key={skill.name} className="py-15 px-15 md:px-10 rounded-2xl bg-foreground/6 flex flex-col justify-center items-center gap-8">
                         {skill.icon}
                         {skill.name}
-                        <Progress value={skill.level}/>
+                        <div className="w-full space-y-2">
+                            <Progress value={skill.level}/>
+                            <span className="text-xs flex justify-end ">{skill.level + "%"}</span>
+                        </div>
                     </div>
                 ))}
             </div>  
-            
         </section>
     )
 }
