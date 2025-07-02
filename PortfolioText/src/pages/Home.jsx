@@ -2,6 +2,8 @@ import { BackgroundEffect } from "@/components/BackgroundEffect";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { Navbar } from "../components/Navbar";
 import { HeroSection } from "../components/HeroSection";
+import { AboutSection } from "../components/AboutSection";
+import { SkillsSection } from "../components/SkillsSection";
 
 export const Home = () => 
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
@@ -14,6 +16,7 @@ export const Home = () =>
         {/* { Main Content } */}
         <main>
             <HeroSection />
+            <AboutSection />
         </main>
         {/* { Footer } */}
     </div>;
