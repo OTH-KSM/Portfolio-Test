@@ -17,7 +17,7 @@ export const ProjectsSection = () => {
             </div>
 
             <div className="container max-w-5xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                <div className="flex flex-col rounded-t-2xl">
+                <div className="flex flex-col rounded-t-2xl z-100">
                     <div>
                         <img 
                             src="/images/galaxyProj.PNG"
@@ -38,28 +38,45 @@ export const ProjectsSection = () => {
                     </div>
 
                 </div>
-                <div className="flex flex-col rounded-t-2xl">
+                <div className="flex flex-col rounded-t-2xl z-10">
                     <div>
                         <img 
                             src="/images/portfolioProj.PNG"
-                            className="rounded-t-2xl w-full h-48 object-contain"/>
+                            className="rounded-t-2xl w-full h-48 object-cover"/>
                     </div>
-                    <div className="rounded-b-2xl p-4 w-full h-16 bg-foreground/6 flex justify-around items-center">
-                        <h2>React</h2>
-                        <h2>Tailwind Css</h2>
-                        <h2>Django</h2>
-                    </div>   
+                    <div className="rounded-b-2xl p-4 w-full bg-foreground/6 ">
+                        <div className="flex justify-around items-center mb-4">
+                            <h2>React</h2>
+                            <h2>Tailwind Css</h2>
+                            <h2>Django</h2>
+                        </div>
+
+                        <div className="flex flex-col items-center">
+                                <h2>Galaxy Pong</h2>
+                                <p className="text-sm text-foreground/60 mt-2">A unique and creative ping pong game with multiple users in a 
+                                    battle for survival </p>
+                        </div> 
+                    </div>
+
                 </div>
-                <div className="flex flex-col rounded-t-2xl">
+                <div className="flex flex-col rounded-t-2xl z-10">
                     <div>
                         <img 
                             src="/images/ReactProj.PNG"
-                            className="rounded-t-2xl w-full h-48 object-contain"/>
+                            className="rounded-t-2xl w-full h-48 object-cover"/>
                     </div>
-                    <div className="rounded-b-2xl p-4 w-full h-16 bg-foreground/6 flex justify-around items-center">
-                        <h2>Vite</h2>
-                        <h2>React</h2>
-                        <h2>Tailwind Css</h2>
+                    <div className="rounded-b-2xl p-4 w-full bg-foreground/6 ">
+                        <div className="flex justify-around items-center mb-4">
+                            <h2>Vite</h2>
+                            <h2>React</h2>
+                            <h2>Tailwind Css</h2>                            
+                        </div>
+
+                        <div className="flex flex-col items-center">
+                                <h2>Bibo Portfolio</h2>
+                                <p className="text-sm text-foreground/60 mt-2">A fully animated responsive portfolio
+                                with vite react and Tailwind</p>
+                        </div> 
                     </div>   
                 </div>
             </div>
